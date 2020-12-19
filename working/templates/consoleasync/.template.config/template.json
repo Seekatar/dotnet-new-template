@@ -12,5 +12,18 @@
   "tags": {
     "language": "C#",
     "type": "project"
+  },
+  "sourceName": "zzzProjectNamezzz",
+  "symbols": {
+    "company": {
+      "type": "parameter",
+      "defaultValue": "My Company",
+      "replaces": "$company$"
+    },
+    "lowerCompany": {
+      "type": "parameter",
+      "defaultValue": "mycompany",
+      "replaces": "zzzProjectNameLowerzzz"
+    }
   }
 }

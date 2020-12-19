@@ -16,7 +16,7 @@
     <IncludeContentInPack>true</IncludeContentInPack>
     <IncludeBuildOutput>false</IncludeBuildOutput>
     <ContentTargetFolders>content</ContentTargetFolders>
-    
+
     <NoWarn>$(NoWarn);NU5128</NoWarn>
   </PropertyGroup>
 
@@ -25,4 +25,8 @@
     <Compile Remove="**\*" />
   </ItemGroup>
 
+  <!-- Added -->
+  <ItemGroup>
+    <None Include="icon.ico" Pack="true" PackagePath="" />
+  </ItemGroup>
 </Project>

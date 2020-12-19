@@ -49,6 +49,12 @@ dotnet pack
 dotnet new -i C:\code\dotnet-new-template\working\bin\Debug\AdatumCorporation.Utility.Templates.1.0.0.nupkg
 ```
 
+Use it
+
+```PowerShell
+dotnet new consoleasync -o Test -c Widget -l test
+```
+
 Uninstall it
 
 ```PowerShell
