@@ -23,7 +23,7 @@ foreach ($t in $Task) {
             dotnet new -u AdatumCorporation.Utility.Templates
         }
         'rebuild-pack' {
-            dotnet new -u AdatumCorporation.Utility.Templates
+            # dotnet new -u AdatumCorporation.Utility.Templates
             Push-Location (Join-Path $PSScriptRoot 'working')
             dotnet pack
             dotnet new -i "$PSScriptRoot\working\bin\Debug\AdatumCorporation.Utility.Templates.1.0.0.nupkg"
@@ -36,7 +36,7 @@ foreach ($t in $Task) {
             if (Test-Path "$PSScriptRoot/test/$Name") {
                 throw "Folder $PSScriptRoot/test/$Name already exists"
             }
-            dotnet new consoleasync -o $Name --company Widget --lowerCompany $name.ToLower()
+            dotnet new consoleasync -o $Name
         }
        Default {}
     }

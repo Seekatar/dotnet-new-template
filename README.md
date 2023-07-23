@@ -62,3 +62,8 @@ dotnet new -u | sls 'dotnet new.*AdatumCorp'
 ```
 
 https://weblog.west-wind.com/posts/2020/Oct/05/Creating-a-dotnet-new-Project-Template
+
+dotnet new test -h
+
+VS Framework parameter name special
+Other parameters new extra step to prompt in VS
